@@ -1,0 +1,1012 @@
+html{
+  scroll-behavior: smooth;
+  margin:0px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin:auto;
+}
+.accueil{
+  width:85%;
+  float: right;
+  text-align: center;
+  background-color:#a2bf48 ;
+  color: #ffffff;
+  padding:3% 0;
+  font-size: 30px;
+}
+.propose{
+  display: inline-block;
+  width: 10%;
+  margin-right: 1%;
+}
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 250px;
+  overflow-x: hidden;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 6s cubic-bezier(0, 0, 1, 1.17) infinite;
+  scroll-behavior: smooth;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.produits{
+  float: left;
+  padding: 0px;
+  margin: 1%;
+  border: #3d3a3d 1px solid;
+  border-bottom-left-radius: 50px;
+  background-color: #fff;
+  width: 100%;
+}
+.imageheader{
+  width: 100%;
+  height: 150px;
+}
+.traitvert{
+  border-bottom: #a2bf48 40px solid;
+}
+.doubleblocdg{
+width: 100%;
+display: flex;
+}
+.doubleblocdg img{
+  width: 100%;
+  }
+.placementblocg img{
+  width: 100%;
+}
+.placementblocd{
+  width: 50%;
+  position: relative;
+  float: right;
+}
+.placementblocg{
+  width: 50%;
+  position: relative;
+  float: left;
+}
+.textbloct h3{
+  font-size: 26px;
+  
+  }
+.textbloct{
+padding: 10%;
+font-size: 18px;
+color: #666366;
+}
+.imagefondpresent{
+  height: auto;
+  background-attachment: fixed;
+  background-image: url("../images/groupe.jpg");
+  background-repeat: no-repeat;
+margin-top: 0%;
+margin-bottom: 0%;
+padding: 70px 70px 100px 70px;
+
+}
+.imagefondplace{
+  background-color: #F8F8F8DE;
+  margin: 0% 8% 3% 8%;
+  padding: 3% 3% 3% 3%;
+}
+.imagefondtext{
+text-align: center;
+}
+.main{
+float:right;
+width: 85%;
+margin: 0;
+height: auto;
+}
+.right {
+ float: right !important;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+.logo{
+  
+    width:100%;
+    height:100%;
+    
+}
+
+.block{
+    background-color: #a2bf48;
+    height: 100%;
+  
+}
+.menu{
+  display: block;
+    float: left;
+    clear: both;
+    text-align: left;
+}
+.logodim{
+  width: 150px;
+  height: 150px;
+ 
+}
+nav{
+  position: fixed;
+  width: 15%;
+  height:100%;
+}
+.topnav {
+  overflow: hidden;
+  
+}
+.connection{
+  float: right;
+width: 95%;
+height: auto;
+padding: 1%;
+position: absolute;
+}
+.connection li{
+display: block;
+float: right;
+}
+.connection li a{
+  color: #ffffff !important;
+font-size: 20px;
+}
+.connection button{
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #4B4D4E;
+  border-radius: 10px ;
+  border:1px #4B4D4E solid;
+  background-color: #F8F8F8;
+  cursor:pointer;
+}
+/** cadre photo*/
+.blocphoto{
+width: 100%;
+display: flex;
+}
+.placephototun{
+  background-color: #ffffff;
+}
+.placephototdeux{
+  background-color: #a2bf48;
+}
+.textphoto{
+  padding: 25px;
+  font-weight: bold;
+}
+.textphotodeux{
+  color: #ffffff;
+}
+.textphotoun{
+  color: #a2bf48;
+  
+}
+.textphoto p{
+ font-size: 18px
+  }
+.textphoto h2{
+  font-size: 25px
+}  
+.cadrephoto{
+width: 25%;
+display: flex;
+}
+.cadrephotodif{
+  width: 50%;
+  display: flex;
+  }
+.placephoto{
+width: 100%;
+position: relative;
+}
+.photo{
+width: 100%;
+text-align: center;
+}
+.taillephoto{
+height: auto;
+max-width: 100%;
+border: none;
+display: inline-block;
+vertical-align: middle;
+}
+
+
+
+/** Fin cadre photo*/
+#bonjour{
+  margin: 30px 10%;
+}
+.trait{
+  border-bottom: #ffffff 2px solid;
+  margin: 0 20%;
+}
+.traitnoir{
+  border-bottom: #000000 3px solid;
+  margin: 3% 20%;
+}
+.bonjour{
+  background-color: #666366;
+  width: 80%;
+  height: auto;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+
+
+}
+.lespatateliste {
+  list-style: none;
+display: inline-block;
+margin-left: 10px
+
+}
+.presentpomme{
+  text-align: center;
+}
+.presentrecette{
+  text-align: center;
+}
+.bonjour p{
+  text-align: left;
+  padding: 30px;
+  font-size: 20px;
+  margin: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topnav .logo {
+  display: block;
+  padding: 18px 12px;
+  width: 90%;
+  align-items: center;
+  margin: auto;
+}
+.topnav .menu a {
+  padding-left: 35px;
+  padding-right: 35px;
+  width:auto;
+  min-height: 64px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.topnav .menu li {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: left;
+  text-decoration: none;
+  font-size: 28px;
+  width: 100%;
+  border-bottom:black 1px solid;
+
+}
+.bar {
+  float: left !important;
+  display: block;
+  color: #f2f2f2;
+  padding: 18px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  width: 150px;
+   
+}
+.bar a{
+  float: left !important;
+  display: block;
+  color: #f2f2f2;
+  padding: 18px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  width: 150px;
+  
+}
+
+.bar a:hover {
+  
+  color: black;
+}
+.bar .icon {
+  display: none;
+ 
+}
+.topnav a:hover {
+  
+  color: black;
+}
+.topnav .icon {
+  display: none;
+ 
+}
+@media (max-width: 1300px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    width: 0px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    display: block;
+    position: absolute;
+    margin-left: 0% !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  .bar.responsive {position: relative;}
+  .bar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 15px;
+    padding-bottom: 0px;
+  }
+  .bar.responsive a {
+   
+    margin-left: 0%!important;
+    background-color: rgb(0,143,51);
+    float: none;
+    display: block;
+    
+  
+  }
+}
+@media (max-width: 1000px) {
+  .bar.responsive {position: relative;}
+  .bar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 15px;
+    padding-bottom: 0px;
+  }
+  .bar.responsive a {
+   
+    margin-left: 0%!important;
+    background-color: rgb(0,143,51);
+    float: none;
+    display: block;
+    
+  
+  }
+  .bar {
+    float: left !important;
+  display: block;
+  color: #f2f2f2;
+  padding: 18px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  width: 150px;
+  overflow-x: hidden; 
+  overflow-y: scroll; 
+  border:#000000 1px solid;
+  height: 300px;
+
+  }
+}
+.debut{
+    text-align:center;
+    background-color: #666366;
+
+    padding: 2%;
+    color:#ffffff
+}
+li{
+  list-style:none;
+}
+.texte{
+  line-height: 1.6;
+  font-family: sans-serif;
+}
+
+.petitbloc{
+
+color: #000000;
+float: left;
+width:16%;
+height: auto;
+padding:12px ;
+border-top:#000000 1px solid;
+border-left:#000000 1px solid;
+border-right:#000000 1px solid;
+font-size: 18px;
+}
+.petitblocv{
+  background-color: #a2bf48;
+}
+#ajout{
+  background-color: #a2bf48;
+}
+.petitblocr{
+  background-color: #bf4848;
+}
+#stock{
+  background-color: #bf4848;
+}
+.petitblocg{
+  background-color: #ffc1f2;
+}
+#commande{
+  background-color: #ffc1f2;
+}
+.petitblocb{
+  background-color: #c9fdff;
+}
+#recette{
+  background-color: #c9fdff;
+}
+.petitbloc:hover{
+  background-color: #b6b6b6;
+}
+.produitrecette{
+  float: left;
+  padding: 0px;
+  margin: 1%;
+  border: #3d3a3d 1px solid;
+  border-bottom-right-radius: 50px;
+  width: 30%;
+}
+
+.placementrecette{
+  width: 50%;
+text-align: center;
+float: left;
+}
+.taillerecette{
+  width: 100%;
+position: relative;
+  
+}
+.preview {
+	max-width: 200px;
+	max-height: 200px;
+	display: block;
+}
+.imageproduitrecette{
+  height: auto;
+  max-width: 100%;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+.placementproduitrecette{
+  width: 50%;
+  text-align: center;
+  float: right;
+}
+.detailproduitrecette{
+  width: 100%;
+position: relative;
+}
+.quant {
+  width: 25%;
+}
+.textproduitrecette{
+  text-align: left;
+  margin: 10%;
+  color: #919191;
+}
+.traitgris{
+  border-bottom: #b7b7b7 6px solid;
+  border-radius: 50px;
+  margin: 10px 0;
+}
+.textproduitrecette p,.textproduitrecette h2{
+  margin: 0!important;
+}
+.produitrecette:hover{
+  box-shadow: 0px 0px 0px  rgb(201, 199, 199); 
+  transition: .5s ;
+}
+.produit{
+  float: left;
+  padding: 0px;
+  margin: 1%;
+  border: #3d3a3d 1px solid;
+  border-bottom-left-radius: 50px;
+  background-color: #fff;
+  width: 14%;
+}
+.placeproduit{
+  width: 100%;
+text-align: center;
+float: left;
+}
+.dimenproduit{
+  width: 100%;
+position: relative;
+}
+.imageproduit{
+  width: 100%;
+position: relative;
+}
+.imageproduit img{
+  height: auto;
+max-width: 100%;
+border: none;
+display: inline-block;
+vertical-align: middle;
+}
+.placedetailproduit{
+  width: 100%;
+text-align: center;
+float: right;
+}
+
+.dimedetailproduit {
+  width: 100%;
+  position: relative;
+}
+
+.detailproduit{
+  text-align: left;
+margin: 10%;
+color: #919191;
+}
+#content h4{
+ color: #008f33;
+ margin: auto;
+}
+#content p{
+  margin-bottom: 50px;
+  margin-top: 0px;
+ }
+fieldset a{
+  text-decoration:solid;
+}
+.conect{
+  width: 100%;
+    float: left;
+    display: block;
+    padding: 0;
+}
+.form-content li input{
+  background: #f7f7f7;
+  border: none;
+  padding: 20px 0px;
+  width: 50%;
+  margin: 20px 0;
+}
+.form-content  input{
+  background: #f7f7f7;
+  border: none;
+  padding: 20px 0px;
+  width: 25%;
+  margin: 20px 0;
+  cursor:pointer;
+}
+.imageproduitsimple img{
+  float: left;
+  margin-right: 10%;
+  width: 500px;
+  height: 750px;
+}
+.headerpatate{
+  width: 85%;
+  float: right;
+}
+.lapatatefond{
+  float: left;
+  width: 50%;
+  display: inline-flex;
+  display: flex; 
+}
+
+.placementitre img{
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+display: inline-block;
+height: auto;
+max-width: 100%;
+}
+.placementitre{
+  float: left;
+  width: 50%;
+  display: inline-flex;
+  display: flex;
+}
+.texttitre{
+  top: 250px;
+  text-align: center
+}
+.titrelapatate{
+  width: 85%;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  clear: both;
+  float: right;
+}
+#content{
+  font-family: 'poppins-bold', sans-serif !important;
+  display: flex;
+  position: relative;
+  text-align: center;
+  align-content: center;
+  width: 100%;
+  margin-top: 5%;
+}
+#blocgauche{
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  width: 100%;
+}
+#blocgauche img{
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+ 
+}
+#blocdroite{
+  padding: 30px;
+  position: relative;
+  text-align: left;
+
+}
+#blocdroite h1{
+  margin-bottom: 20px;
+  color: #90A019;
+  margin-top: 0px;
+  font-weight: 300;
+  font-size: 38px;
+}
+#blocdroite h2{
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: black;
+  font-size: 28px;
+  line-height: 1.3em;
+  margin-top: 0px;
+}
+.recette{
+  width: 80%;
+  float: left;
+  font-family: 'poppins-bold', sans-serif !important;
+  margin-left: 2%;
+position: relative;
+margin-top: 2%;
+}
+.positioningredient{
+width: 20%;
+float: left;
+border-radius: 50px;
+border: #666366 1px solid;
+display: flex;
+}
+.ingredient{
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  width: 100%;
+}
+.textingredient{
+  padding: 20px;
+  position: relative;
+  text-align: left;
+  margin-bottom: 20px;
+color: #666366;
+font-size: 20px;
+font-weight: 500;
+line-height: 1.5em;
+margin-top: 0px;
+width: 100%;
+}
+.positionetape{
+  width: 79%;
+  float: left;
+  border-radius: 50px;
+border: #666366 1px solid;
+display: flex;
+}
+.etape{
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+.textetape{
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 20px;
+  color: #666366;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5em;
+  margin-top: 0px;
+}
+#blocdroite h4{
+  margin-bottom: 20px;
+  color: #494848;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5em;
+  margin-top: 0px;
+}
+#blocdroite p{
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.6em;
+  margin-top: 0px;
+}
+#buttonpatate{
+  background-color: #a2bf48;
+  padding: 20px 40px;
+  color: white;
+  display: inline-block;
+  font-style: none;
+  margin: 0px 0px 0px -120px;
+  font-size: 23px;
+  text-align: center;
+  border: 0px;
+  cursor: pointer;
+}
+#buttonrectte{
+  background-color: #a2bf48;
+  padding: 20px 40px;
+  color: white;
+  display: inline-block;
+  font-style: none;
+  margin: 10px 0px 0px 0;
+  font-size: 23px;
+  text-align: center;
+  border: 0px;
+  cursor: pointer;
+  float: left;
+}
+#button{
+  margin: 2%;
+position: relative;
+}
+.bloccontent{
+  float: left;
+  width: 50%;
+  display: inline-flex;
+  display: flex;
+}
+.sectionpatate{
+  position: relative;
+  float: left;
+}
+.nombrepatate{
+  text-align: center;
+  font-size: 25px;
+  color: #666366;
+  margin: 2%;
+}
+#form{
+  width: 100%;
+  float: left;
+  position: relative;
+  display: block;
+  margin-top: 2%;
+}
+#paiement{
+  width: 30%;
+  float: right;
+  position: relative;
+  display: block;
+  margin-top: 3%;
+
+}
+#paiement th{
+  max-width: 300px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2%;
+  padding: 20px 4px;
+
+}
+.titretot{
+  text-align: left;
+  padding-left: 5%!important;
+}
+#paiement .tot th,#paiement .tot td {
+  max-width: 300px;
+  border-bottom: none;
+  margin-bottom: 2%;
+  padding: 20px 4px;
+
+}
+.supp{
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-image: url(../images/croix.png);
+  padding: 20px;
+  background-position: left;
+  background-size: cover;
+  width: auto;
+  border-radius: 100%;
+}
+.supp:hover{
+  background-color: rgb(189, 0, 0)!important;
+  border-radius: 100%;
+  padding: 20px !important;
+}
+table{
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+tr{
+  border: 1px solid #ccc;
+  text-align: center;
+}
+td{
+  padding-top: 1%;
+}
+th{
+  max-width: 300px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2%;
+}
+.prixtot td{
+  border-top: 1px solid #ccc;
+}
+td input,th input{
+  background: #e6e6e6;
+  color:#515151;
+  cursor: pointer;
+  position: relative;
+  overflow: visible;
+  font-size: 100%;
+  line-height: 1;
+  padding: 2% 10%;
+  border-radius: 3px;
+  left: auto;
+  display: inline;
+  height: 40px;
+  width: 100%;
+}
+#paiement input{
+  border: 0;
+  background: #a2bf48;
+  color:#ffffff;
+  cursor: pointer;
+  position: relative;
+  overflow: visible;
+  font-size: 22px;
+  line-height: 1;
+  padding: 2% 10%;
+  border-radius: 3px;
+  left: auto;
+  display: inline;
+  width: 90%;
+  float: right;
+}
+td input:hover,th input:hover,#paiement input:hover{
+  background-color: #dfdcde;
+  color:#515151;
+
+}
+td .quant{
+  background: #e6e6e6;
+  color:#515151;
+  cursor: pointer;
+  position: relative;
+  overflow: visible;
+  font-size: 100%;
+  line-height: 1;
+  padding: 2% 2%;
+  border-radius: 3px;
+  left: auto;
+  display: inline;
+  height: 20px;
+  width: 12%!important;
+}
+.bouton
+{
+    color:#0000ff;
+    font-size:24px;
+    cursor:pointer;
+}
+.bouton:hover
+{
+    text-decoration:underline;
+}
+.texte
+{
+    border:1px solid #333333;
+    background:#eeeeee;
+    padding:10px;
+    color:#333333;
+}
+.sousmenu .texte:hover
+{
+    border:1px solid #000000;
+    background:#cccccc;
+    color:#000000;
+}
+.sousmenu{
+  text-align:center;
+    background-color: rgba(128, 128, 128, 0.575);
+    float: left;
+    width: 100%;
+}
+.activiter{
+  width: 100%;
+  height: auto;
+  float: left;
+}
+.miniacti{
+  position: absolute;
+  text-align: center;
+  width: 85%;
+}
+.nom, .couleur,.image{
+
+  float: left;
+ width: auto;
+ margin:20px 20px ;
+}
+.origine, .prix,.text{
+text-align: center;
+  float: right;
+  width: auto;
+  margin:20px 20px ;
+}
+.bouton{
+  width: auto;
+  position: relative;
+
+}
+.boutoncli{
+  cursor:pointer;
+  cursor: pointer;
+margin-left: 38%;
+float: left;
+
+position: relative;
+display: block;
+}
+input::placeholder {  
+	text-align: center; 
+}
+.image{
+  margin:10px 20px ;
+}
+.formpatate .image input {
+  background: #f7f7f7;
+  border: none;
+  padding: 10px 0px;
+}
+.formpatate input{
+background: #f7f7f7;
+border: none;
+padding: 20px 36px;
+}
+.formpatate{
+  height: auto;
+float: left;
+text-align: left;
+width: 35%;
+margin-left: 34%;
+margin-bottom: 2%;
+}
+.positionform{
+
+}

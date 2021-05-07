@@ -1,0 +1,42 @@
+Site Patates patafore
+
+Page index
+-Bienvenus
+-Tous les types de patates
+-Tes patates à vendres 
+---------------------------------- 
+Page Hitorique de la patate 
+-D'ou vient la premiere patate
+-Homme qui la decouvert 
+---------------------------------- 
+Page cuisiner la patate 
+-Catégorie entre/plat/dessert/amusebouche
+-Les recettes de patate 
+-Avec compteur du nombre de personnes
+---------------------------------- 
+Page inscription
+-Nom
+-Prenom
+-Mot de passe 
+-Mail
+-Addresse
+---------------------------------- 
+Page connexion
+-Mail
+-Mot de passe
+---------------------------------- 
+Page Achat de patate 
+-Choix de patate 
+-Catégoris par caractéristique:couleur/goût/forme/le plus acheté
+-Livraison
+-Adresse(base de donne ou list de pays?)
+---------------------------------- 
+Page descriptif de chacune de patate 
+-Nom
+-Type
+-Couleur
+-Forme
+-Gout
+-Origine
+-Commantaire
+---------------------------------- 
