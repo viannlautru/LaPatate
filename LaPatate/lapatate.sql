@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  sam. 08 mai 2021 à 12:32
+-- Généré le :  sam. 08 mai 2021 à 13:23
 -- Version du serveur :  5.7.17
 -- Version de PHP :  7.1.3
 
@@ -549,35 +549,37 @@ CREATE TABLE `recette` (
   `image_recette` varchar(100) NOT NULL,
   `Etape` text NOT NULL,
   `Validation` tinyint(1) DEFAULT NULL,
-  `Date` datetime NOT NULL
+  `Date` datetime NOT NULL,
+  `Auteur` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `recette`
 --
 
-INSERT INTO `recette` (`Id_recette`, `Nom_recette`, `Duree`, `ingredient`, `Categorie`, `image_recette`, `Etape`, `Validation`, `Date`) VALUES
-(1, 'tarte', 10, '-2kg carotte</br>', 1, 'recette/345827.jpg', '0.mettre le plat au four</br>', 0, '2013-04-21 12:52:36'),
-(4, 'Raclette', 60, '-15kg Fromage</br>-15 Pomme de terre</br>-15kg viande</br>', 1, 'recette/raclette-1293573_1920.jpg', '0.allumer la machine</br>1.preparer les fromages</br>2.mettre dans la machine</br>', 1, '2014-04-21 03:26:55');
+INSERT INTO `recette` (`Id_recette`, `Nom_recette`, `Duree`, `ingredient`, `Categorie`, `image_recette`, `Etape`, `Validation`, `Date`, `Auteur`) VALUES
+(1, 'tarte', 10, '-2kg carotte</br>', 1, 'recette/345827.jpg', '0.mettre le plat au four</br>', 0, '2013-04-21 12:52:36', 0),
+(4, 'Raclette', 60, '-15kg Fromage</br>-15 Pomme de terre</br>-15kg viande</br>', 1, 'recette/raclette-1293573_1920.jpg', '0.allumer la machine</br>1.preparer les fromages</br>2.mettre dans la machine</br>', 1, '2014-04-21 03:26:55', 0),
+(5, 'la patate', 5, '-5kg patate</br>', 2, 'recette/fondmobile.jpg', '0.la mettre à bouillir</br>', 0, '2008-05-21 01:15:12', 1);
 
 --
 -- Déclencheurs `recette`
 --
 DELIMITER $$
 CREATE TRIGGER `rec_del` BEFORE DELETE ON `recette` FOR EACH ROW begin
-	insert into recette_save values (old.Id_recette, old.Nom_recette, old.Duree, old.ingredient, old.Categorie, old.image_recette, old.Etape, old.Validation, old.Date,'D');
+	insert into recette_save values (old.Id_recette, old.Nom_recette, old.Duree, old.ingredient, old.Categorie, old.image_recette, old.Etape, old.Validation, old.Date,old.Auteur,'D');
 end
 $$
 DELIMITER ;
 DELIMITER $$
 CREATE TRIGGER `rec_sauv` AFTER INSERT ON `recette` FOR EACH ROW begin
-	insert into recette_save values (new.Id_recette, new.Nom_recette, new.Duree, new.ingredient, new.Categorie, new.image_recette, new.Etape, new.Validation, new.Date,'I');
+	insert into recette_save values (new.Id_recette, new.Nom_recette, new.Duree, new.ingredient, new.Categorie, new.image_recette, new.Etape, new.Validation, new.Date,new.Auteur,'I');
 end
 $$
 DELIMITER ;
 DELIMITER $$
 CREATE TRIGGER `rec_up` AFTER UPDATE ON `recette` FOR EACH ROW begin
-	insert into recette_save values (new.Id_recette, new.Nom_recette, new.Duree, new.ingredient, new.Categorie, new.image_recette, new.Etape, new.Validation, new.Date,'U');
+	insert into recette_save values (new.Id_recette, new.Nom_recette, new.Duree, new.ingredient, new.Categorie, new.image_recette, new.Etape, new.Validation, new.Date,new.Auteur,'U');
 end
 $$
 DELIMITER ;
@@ -592,13 +594,23 @@ CREATE TABLE `recette_save` (
   `Id_recette` int(11) NOT NULL,
   `Nom_recette` varchar(50) NOT NULL,
   `Duree` time NOT NULL,
-  `ingredient` int(11) NOT NULL,
+  `ingredient` text NOT NULL,
   `Categorie` int(11) NOT NULL,
   `image_recette` varchar(100) NOT NULL,
   `Etape` text NOT NULL,
   `Validation` tinyint(1) DEFAULT NULL,
-  `Date` datetime NOT NULL
+  `Date` datetime NOT NULL,
+  `Auteur` int(11) NOT NULL,
+  `Type` varchar(20) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `recette_save`
+--
+
+INSERT INTO `recette_save` (`Id_recette`, `Nom_recette`, `Duree`, `ingredient`, `Categorie`, `image_recette`, `Etape`, `Validation`, `Date`, `Auteur`, `Type`) VALUES
+(5, 'la patate', '00:00:05', '-5kg patate</br>', 2, 'recette/fondmobile.jpg', '0.la mettre à bouillir</br>', 0, '2008-05-21 01:15:12', 0, 'U'),
+(5, 'la patate', '00:00:05', '-5kg patate</br>', 2, 'recette/fondmobile.jpg', '0.la mettre à bouillir</br>', 0, '2008-05-21 01:15:12', 1, 'U');
 
 --
 -- Index pour les tables déchargées
@@ -673,7 +685,7 @@ ALTER TABLE `patate`
 -- AUTO_INCREMENT pour la table `recette`
 --
 ALTER TABLE `recette`
-  MODIFY `Id_recette` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;COMMIT;
+  MODIFY `Id_recette` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
