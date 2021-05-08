@@ -44,8 +44,8 @@ class recetteManager implements iterator
     public function addrecette(Recette $recette)
         {                   
                         //insertion dans la table recette
-                        $q = $this->_db->prepare('INSERT INTO recette(Nom_recette,Duree,ingredient,Categorie,image_recette,Etape,Validation,Date)
-                         VALUES(:Nom_recette, :Duree, :ingredient, :Categorie, :image_recette, :Etape, :Validation, :Date)');	
+                        $q = $this->_db->prepare('INSERT INTO recette(Nom_recette,Duree,ingredient,Categorie,image_recette,Etape,Validation,Date,Auteur)
+                         VALUES(:Nom_recette, :Duree, :ingredient, :Categorie, :image_recette, :Etape, :Validation, :Date, :Auteur)');	
                         $q->bindValue(':Nom_recette', $recette->getNom_recette());
                         echo $recette->getNom_recette();
                         $q->bindValue(':Duree', $recette->getDuree());
@@ -61,6 +61,8 @@ class recetteManager implements iterator
                         $q->bindValue(':Validation', $recette->getValidation());
                         echo $recette->getValidation();
                         $q->bindValue(':Date', $recette->getDate());
+                        $q->bindValue(':Auteur', $recette->getAuteur());
+                        echo $recette->getAuteur();
                         echo $recette->getDate();
                         $q->execute();
                         
