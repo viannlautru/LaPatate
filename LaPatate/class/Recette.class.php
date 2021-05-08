@@ -15,6 +15,7 @@ class Recette
 	private $_Etape;
 	private $_Validation;
 	private $_Date;
+	private $_Auteur;
 
 	// Le constructeur
 	public function __construct(array $donnees)
@@ -75,7 +76,10 @@ class Recette
 	{
 		return $this->_Date;
 	}
-	
+	public function getAuteur()
+	{
+		return $this->_Auteur;
+	}
 
 
     // Les setters ou mutateurs avec éventuellement des restrictions
@@ -146,6 +150,14 @@ class Recette
 		if (is_string($Date))
 		{
 			$this->_Date = $Date;
+		}
+	}
+	public function setAuteur($Auteur)
+	{
+		$Auteur = (int) $Auteur;
+		if ($Auteur)
+		{
+			$this->_Auteur = $Auteur;
 		}
 	}
 
