@@ -41,7 +41,7 @@
             <h4>Bon comme  
                 <select value="Categorie" name="Categorie" type="text">
                 <?php
-                
+              
                   $req = $db->query("SELECT * FROM categorie");
              
               //on parcour la table des catégories pour la proposer dans une liste
@@ -157,7 +157,8 @@ $manager = new Recettemanager($db);
                           'image_recette'=>$image,
                           'Etape'=>$etape,
                           'Validation'=>$valid,
-                          'Date'=>$date]);
+                          'Date'=>$date,
+                          'Auteur'=>$_SESSION['id']]);
                         //création de la nouvelle recette
                           $manager->addrecette($newrecette);
                           echo 'envoyé';
